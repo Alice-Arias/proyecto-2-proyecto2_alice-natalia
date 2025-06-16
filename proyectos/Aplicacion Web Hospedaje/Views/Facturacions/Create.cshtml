@@ -1,0 +1,51 @@
+﻿@model Aplicacion_Web_Hospedaje.Models.Facturacion
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Facturacion</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="NumeroFacturacion" class="control-label"></label>
+                <input asp-for="NumeroFacturacion" class="form-control" />
+                <span asp-validation-for="NumeroFacturacion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IdReserva" class="control-label"></label>
+                <select asp-for="IdReserva" class ="form-control" asp-items="ViewBag.IdReserva"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="CantidadNoches" class="control-label"></label>
+                <input asp-for="CantidadNoches" class="form-control" />
+                <span asp-validation-for="CantidadNoches" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ImporteTotal" class="control-label"></label>
+                <input asp-for="ImporteTotal" class="form-control" />
+                <span asp-validation-for="ImporteTotal" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IdTipoPago" class="control-label"></label>
+                <select asp-for="IdTipoPago" class ="form-control" asp-items="ViewBag.IdTipoPago"></select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

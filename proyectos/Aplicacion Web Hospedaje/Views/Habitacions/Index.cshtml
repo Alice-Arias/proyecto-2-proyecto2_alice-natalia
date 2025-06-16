@@ -1,0 +1,60 @@
+﻿@model IEnumerable<Aplicacion_Web_Hospedaje.Models.Habitacion>
+
+@{
+    ViewData["Title"] = "Habitaciones";
+}
+
+<h2 class="text-center text-primary mt-3">
+    @if (ViewBag.FiltradoPorHospedaje != null && ViewBag.FiltradoPorHospedaje)
+    {
+        <text>Habitaciones de @ViewBag.NombreHospedaje</text>
+    }
+    else
+    {
+        <text>Todas las Habitaciones</text>
+    }
+</h2>
+
+<div class="text-center mb-3">
+    <a asp-action="Create" class="btn btn-success">Registrar nueva habitación</a>
+
+    @if (ViewBag.FiltradoPorHospedaje != null && ViewBag.FiltradoPorHospedaje)
+    {
+        <a asp-action="Index" class="btn btn-secondary ms-2">Ver todas</a>
+    }
+</div>
+
+@if (!Model.Any())
+{
+    <div class="alert alert-warning text-center">No hay habitaciones registradas.</div>
+}
+else
+{
+    <table class="table table-striped table-bordered">
+        <thead class="table-dark text-center">
+            <tr>
+                <th>Número</th>
+                <th>Capacidad</th>
+                <th>Hospedaje</th>
+                <th>Tipo de habitación</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.NumeroHabitacion</td>
+                <td>@item.CantidadPersonas</td>
+                <td>@item.IdHospedajeNavigation?.NombreHospedaje</td>
+                <td>@item.IdTipoHabitacionNavigation?.NombreTipoHabitacion</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.IdHabitacion" class="btn btn-sm btn-warning">Editar</a>
+                    <a asp-action="Details" asp-route-id="@item.IdHabitacion" class="btn btn-sm btn-info">Detalles</a>
+                    <a asp-action="Delete" asp-route-id="@item.IdHabitacion" class="btn btn-sm btn-danger">Eliminar</a>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+}

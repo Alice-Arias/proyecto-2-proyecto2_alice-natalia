@@ -1,0 +1,45 @@
+﻿@model Aplicacion_Web_Hospedaje.Models.Habitacion
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Detalles de la Habitación</h1>
+
+<div>
+    <h4>Habitación</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.NumeroHabitacion)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.NumeroHabitacion)
+        </dd>
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CantidadPersonas)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CantidadPersonas)
+        </dd>
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.IdHospedajeNavigation.NombreHospedaje)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.IdHospedajeNavigation.NombreHospedaje)
+        </dd>
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.IdTipoHabitacionNavigation.NombreTipoHabitacion)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.IdTipoHabitacionNavigation.NombreTipoHabitacion)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.IdHabitacion">Editar</a> |
+    <a asp-action="Index">Volver a la lista</a>
+</div>

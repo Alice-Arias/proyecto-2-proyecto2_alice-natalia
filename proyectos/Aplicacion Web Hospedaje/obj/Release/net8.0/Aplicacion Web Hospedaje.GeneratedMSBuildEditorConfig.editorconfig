@@ -1,0 +1,189 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Aplicacion_Web_Hospedaje
+build_property.RootNamespace = Aplicacion_Web_Hospedaje
+build_property.ProjectDir = C:\Users\natal\Downloads\proyecto-1-proyecto1_alice-natalia-main\proyecto-1-proyecto1_alice-natalia-main\Aplicacion Web Hospedaje\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\natal\Downloads\proyecto-1-proyecto1_alice-natalia-main\proyecto-1-proyecto1_alice-natalia-main\Aplicacion Web Hospedaje
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/natal/Downloads/proyecto-1-proyecto1_alice-natalia-main/proyecto-1-proyecto1_alice-natalia-main/Aplicacion Web Hospedaje/Views/Account/About.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBYm91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/natal/Downloads/proyecto-1-proyecto1_alice-natalia-main/proyecto-1-proyecto1_alice-natalia-main/Aplicacion Web Hospedaje/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/natal/Downloads/proyecto-1-proyecto1_alice-natalia-main/proyecto-1-proyecto1_alice-natalia-main/Aplicacion Web Hospedaje/Views/Account/LoginCliente.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbkNsaWVudGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/natal/Downloads/proyecto-1-proyecto1_alice-natalia-main/proyecto-1-proyecto1_alice-natalia-main/Aplicacion Web Hospedaje/Views/Clientes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/natal/Downloads/proyecto-1-proyecto1_alice-natalia-main/proyecto-1-proyecto1_alice-natalia-main/Aplicacion Web Hospedaje/Views/Clientes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/natal/Downloads/proyecto-1-proyecto1_alice-natalia-main/proyecto-1-proyecto1_alice-natalia-main/Aplicacion Web Hospedaje/Views/Clientes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/natal/Downloads/proyecto-1-proyecto1_alice-natalia-main/proyecto-1-proyecto1_alice-natalia-main/Aplicacion Web Hospedaje/Views/Clientes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/natal/Downloads/proyecto-1-proyecto1_alice-natalia-main/proyecto-1-proyecto1_alice-natalia-main/Aplicacion Web Hospedaje/Views/Clientes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/natal/Downloads/proyecto-1-proyecto1_alice-natalia-main/proyecto-1-proyecto1_alice-natalia-main/Aplicacion Web Hospedaje/Views/EmpresaRecreativas/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wcmVzYVJlY3JlYXRpdmFzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/natal/Downloads/proyecto-1-proyecto1_alice-natalia-main/proyecto-1-proyecto1_alice-natalia-main/Aplicacion Web Hospedaje/Views/EmpresaRecreativas/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wcmVzYVJlY3JlYXRpdmFzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/natal/Downloads/proyecto-1-proyecto1_alice-natalia-main/proyecto-1-proyecto1_alice-natalia-main/Aplicacion Web Hospedaje/Views/EmpresaRecreativas/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wcmVzYVJlY3JlYXRpdmFzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/natal/Downloads/proyecto-1-proyecto1_alice-natalia-main/proyecto-1-proyecto1_alice-natalia-main/Aplicacion Web Hospedaje/Views/EmpresaRecreativas/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wcmVzYVJlY3JlYXRpdmFzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/natal/Downloads/proyecto-1-proyecto1_alice-natalia-main/proyecto-1-proyecto1_alice-natalia-main/Aplicacion Web Hospedaje/Views/EmpresaRecreativas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wcmVzYVJlY3JlYXRpdmFzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/natal/Downloads/proyecto-1-proyecto1_alice-natalia-main/proyecto-1-proyecto1_alice-natalia-main/Aplicacion Web Hospedaje/Views/Facturacions/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFjdHVyYWNpb25zXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/natal/Downloads/proyecto-1-proyecto1_alice-natalia-main/proyecto-1-proyecto1_alice-natalia-main/Aplicacion Web Hospedaje/Views/Facturacions/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFjdHVyYWNpb25zXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/natal/Downloads/proyecto-1-proyecto1_alice-natalia-main/proyecto-1-proyecto1_alice-natalia-main/Aplicacion Web Hospedaje/Views/Facturacions/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFjdHVyYWNpb25zXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/natal/Downloads/proyecto-1-proyecto1_alice-natalia-main/proyecto-1-proyecto1_alice-natalia-main/Aplicacion Web Hospedaje/Views/Facturacions/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFjdHVyYWNpb25zXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/natal/Downloads/proyecto-1-proyecto1_alice-natalia-main/proyecto-1-proyecto1_alice-natalia-main/Aplicacion Web Hospedaje/Views/Facturacions/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFjdHVyYWNpb25zXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/natal/Downloads/proyecto-1-proyecto1_alice-natalia-main/proyecto-1-proyecto1_alice-natalia-main/Aplicacion Web Hospedaje/Views/Habitacions/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFiaXRhY2lvbnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/natal/Downloads/proyecto-1-proyecto1_alice-natalia-main/proyecto-1-proyecto1_alice-natalia-main/Aplicacion Web Hospedaje/Views/Habitacions/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFiaXRhY2lvbnNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/natal/Downloads/proyecto-1-proyecto1_alice-natalia-main/proyecto-1-proyecto1_alice-natalia-main/Aplicacion Web Hospedaje/Views/Habitacions/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFiaXRhY2lvbnNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/natal/Downloads/proyecto-1-proyecto1_alice-natalia-main/proyecto-1-proyecto1_alice-natalia-main/Aplicacion Web Hospedaje/Views/Habitacions/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFiaXRhY2lvbnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/natal/Downloads/proyecto-1-proyecto1_alice-natalia-main/proyecto-1-proyecto1_alice-natalia-main/Aplicacion Web Hospedaje/Views/Habitacions/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFiaXRhY2lvbnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/natal/Downloads/proyecto-1-proyecto1_alice-natalia-main/proyecto-1-proyecto1_alice-natalia-main/Aplicacion Web Hospedaje/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/natal/Downloads/proyecto-1-proyecto1_alice-natalia-main/proyecto-1-proyecto1_alice-natalia-main/Aplicacion Web Hospedaje/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/natal/Downloads/proyecto-1-proyecto1_alice-natalia-main/proyecto-1-proyecto1_alice-natalia-main/Aplicacion Web Hospedaje/Views/Hospedajes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9zcGVkYWplc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/natal/Downloads/proyecto-1-proyecto1_alice-natalia-main/proyecto-1-proyecto1_alice-natalia-main/Aplicacion Web Hospedaje/Views/Hospedajes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9zcGVkYWplc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/natal/Downloads/proyecto-1-proyecto1_alice-natalia-main/proyecto-1-proyecto1_alice-natalia-main/Aplicacion Web Hospedaje/Views/Hospedajes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9zcGVkYWplc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/natal/Downloads/proyecto-1-proyecto1_alice-natalia-main/proyecto-1-proyecto1_alice-natalia-main/Aplicacion Web Hospedaje/Views/Hospedajes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9zcGVkYWplc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/natal/Downloads/proyecto-1-proyecto1_alice-natalia-main/proyecto-1-proyecto1_alice-natalia-main/Aplicacion Web Hospedaje/Views/Hospedajes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9zcGVkYWplc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/natal/Downloads/proyecto-1-proyecto1_alice-natalia-main/proyecto-1-proyecto1_alice-natalia-main/Aplicacion Web Hospedaje/Views/Reservacions/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YWNpb25zXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/natal/Downloads/proyecto-1-proyecto1_alice-natalia-main/proyecto-1-proyecto1_alice-natalia-main/Aplicacion Web Hospedaje/Views/Reservacions/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YWNpb25zXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/natal/Downloads/proyecto-1-proyecto1_alice-natalia-main/proyecto-1-proyecto1_alice-natalia-main/Aplicacion Web Hospedaje/Views/Reservacions/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YWNpb25zXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/natal/Downloads/proyecto-1-proyecto1_alice-natalia-main/proyecto-1-proyecto1_alice-natalia-main/Aplicacion Web Hospedaje/Views/Reservacions/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YWNpb25zXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/natal/Downloads/proyecto-1-proyecto1_alice-natalia-main/proyecto-1-proyecto1_alice-natalia-main/Aplicacion Web Hospedaje/Views/Reservacions/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YWNpb25zXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/natal/Downloads/proyecto-1-proyecto1_alice-natalia-main/proyecto-1-proyecto1_alice-natalia-main/Aplicacion Web Hospedaje/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/natal/Downloads/proyecto-1-proyecto1_alice-natalia-main/proyecto-1-proyecto1_alice-natalia-main/Aplicacion Web Hospedaje/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/natal/Downloads/proyecto-1-proyecto1_alice-natalia-main/proyecto-1-proyecto1_alice-natalia-main/Aplicacion Web Hospedaje/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/natal/Downloads/proyecto-1-proyecto1_alice-natalia-main/proyecto-1-proyecto1_alice-natalia-main/Aplicacion Web Hospedaje/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/natal/Downloads/proyecto-1-proyecto1_alice-natalia-main/proyecto-1-proyecto1_alice-natalia-main/Aplicacion Web Hospedaje/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-axqm10da1h

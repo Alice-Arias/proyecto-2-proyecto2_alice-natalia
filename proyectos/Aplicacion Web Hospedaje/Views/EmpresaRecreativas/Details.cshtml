@@ -1,0 +1,48 @@
+﻿@model Aplicacion_Web_Hospedaje.Models.EmpresaRecreativa
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>EmpresaRecreativa</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CedulaJuridicaEmpresa)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CedulaJuridicaEmpresa)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NombreEmpresas)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NombreEmpresas)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CorreoElectronico)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CorreoElectronico)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NombrePersonal)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NombrePersonal)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NumeroTelefono)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NumeroTelefono)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.IdEmpresaRecreativa">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

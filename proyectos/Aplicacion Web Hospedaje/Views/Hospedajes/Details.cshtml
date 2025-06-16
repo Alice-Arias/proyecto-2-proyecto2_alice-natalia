@@ -1,0 +1,80 @@
+﻿@model Aplicacion_Web_Hospedaje.Models.Hospedaje
+
+@{
+    ViewData["Title"] = "Detalles del Hospedaje";
+}
+
+<h1>@Model.NombreHospedaje</h1>
+
+<div class="mb-4">
+    <h4>Información general</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-3">Cédula Jurídica</dt>
+        <dd class="col-sm-9">@Model.CedulaJuridica</dd>
+
+        <dt class="col-sm-3">Sitio Web</dt>
+        <dd class="col-sm-9">
+            @if (!string.IsNullOrEmpty(Model.UrlSitioWeb))
+            {
+                <a href="@Model.UrlSitioWeb" target="_blank">@Model.UrlSitioWeb</a>
+            }
+            else
+            {
+                <span>No disponible</span>
+            }
+        </dd>
+
+        <dt class="col-sm-3">Correo Electrónico</dt>
+        <dd class="col-sm-9">@Model.CorreoElectronico</dd>
+
+        <dt class="col-sm-3">Ubicación (GPS)</dt>
+        <dd class="col-sm-9">@Model.ReferenciasGps</dd>
+
+        <dt class="col-sm-3">Tipo de Hospedaje</dt>
+        <dd class="col-sm-9">@Model.TipoHospedajeNavigation?.NombreTipoHospedaje"</dd>
+    </dl>
+</div>
+
+<hr />
+
+<h4>Habitaciones disponibles</h4>
+
+@if (Model.Habitacions != null && Model.Habitacions.Any())
+{
+    <div class="row">
+        @foreach (var hab in Model.Habitacions)
+        {
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Habitación: @hab.NumeroHabitacion</h5>
+                        <p class="card-text mb-1"><strong>Capacidad:</strong> @hab.CantidadPersonas personas</p>
+                        <p class="card-text mb-3"><strong>Tipo:</strong> @hab.IdTipoHabitacionNavigation?.NombreTipoHabitacion</p>
+
+                        <a asp-controller="Habitacions" asp-action="Details" asp-route-id="@hab.IdHabitacion" class="btn btn-primary mt-auto">
+    Ver detalles
+</a>
+
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}
+else
+{
+    <p><em>No hay habitaciones registradas para este hospedaje.</em></p>
+}
+
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.IdHospedaje" class="btn btn-secondary">Editar Hospedaje</a>
+    <a asp-action="Index" class="btn btn-link">Volver a la lista</a>
+</div>
+
+<style>
+    /* Opcional: mejor presentación */
+    h1 {
+        font-weight: 700;
+    }
+</style>
