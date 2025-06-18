@@ -9,20 +9,61 @@ using Aplicacion_Web_Hospedaje.Models;
 
 namespace Aplicacion_Web_Hospedaje.Controllers
 {
-    // Controlador para gestionar las operaciones CRUD de los clientes
     public class ClientesController : Controller
     {
-        // Campo para acceder al contexto de la base de datos
         private readonly AppDbContext _context;
 
-        // Constructor que recibe el contexto de base de datos mediante inyección de dependencias
         public ClientesController(AppDbContext context)
         {
             _context = context;
         }
 
+        // GET: Clientes/LoginCliente
+        [HttpGet]
+        public IActionResult LoginCliente()
+        {
+            return View();
+        }
+
+        // POST: Clientes/LoginCliente
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> LoginCliente(LoginViewModel model)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+
+            var cliente = await _context.Clientes
+                .FirstOrDefaultAsync(c => c.CorreoElectronico == model.CorreoElectronico);
+
+            if (cliente == null)
+            {
+                ModelState.AddModelError(string.Empty, "Correo no registrado.");
+                return View(model);
+            }
+
+            return RedirectToAction("VistaCliente", new { id = cliente.IdCliente });
+        }
+
+        // GET: Clientes/VistaCliente/5
+        public async Task<IActionResult> VistaCliente(int id)
+        {
+            var cliente = await _context.Clientes
+                .Include(c => c.PaisResidenciaNavigation)
+                .Include(c => c.TipoIdentidadNavigation)
+                .FirstOrDefaultAsync(c => c.IdCliente == id);
+
+            if (cliente == null)
+            {
+                return NotFound();
+            }
+
+            return View(cliente);
+        }
+
         // GET: Clientes
-        // Muestra la lista de todos los clientes, incluyendo sus relaciones con país y tipo de identidad
         public async Task<IActionResult> Index()
         {
             var appDbContext = _context.Clientes
@@ -32,12 +73,11 @@ namespace Aplicacion_Web_Hospedaje.Controllers
         }
 
         // GET: Clientes/Details/5
-        // Muestra los detalles de un cliente específico
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
             {
-                return NotFound(); // Si no se proporciona ID, retorna error 404
+                return NotFound();
             }
 
             var cliente = await _context.Clientes
@@ -47,43 +87,37 @@ namespace Aplicacion_Web_Hospedaje.Controllers
 
             if (cliente == null)
             {
-                return NotFound(); // Si no se encuentra el cliente, retorna error 404
+                return NotFound();
             }
 
-            return View(cliente); // Muestra la vista con los detalles del cliente
+            return View(cliente);
         }
 
         // GET: Clientes/Create
-        // Muestra el formulario para crear un nuevo cliente
         public IActionResult Create()
         {
-            // Carga las listas desplegables para país y tipo de identidad
             ViewData["PaisResidencia"] = new SelectList(_context.Pais, "IdPais", "IdPais");
             ViewData["TipoIdentidad"] = new SelectList(_context.TipoIdentidads, "IdTipoIdentidad", "IdTipoIdentidad");
             return View();
         }
 
         // POST: Clientes/Create
-        // Procesa el formulario de creación de cliente
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("IdCliente,IdentificacionCliente,PrimerApellido,SegundoApellido,Nombre,CorreoElectronico,FechaNacimiento,TipoIdentidad,PaisResidencia")] Cliente cliente)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(cliente); // Agrega el nuevo cliente al contexto
-                await _context.SaveChangesAsync(); // Guarda los cambios en la base de datos
-                return RedirectToAction(nameof(Index)); // Redirige a la lista de clientes
+                _context.Add(cliente);
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
             }
-
-            // Si hay errores, vuelve a cargar las listas desplegables y muestra el formulario
             ViewData["PaisResidencia"] = new SelectList(_context.Pais, "IdPais", "IdPais", cliente.PaisResidencia);
             ViewData["TipoIdentidad"] = new SelectList(_context.TipoIdentidads, "IdTipoIdentidad", "IdTipoIdentidad", cliente.TipoIdentidad);
             return View(cliente);
         }
 
         // GET: Clientes/Edit/5
-        // Muestra el formulario para editar un cliente existente
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -96,53 +130,47 @@ namespace Aplicacion_Web_Hospedaje.Controllers
             {
                 return NotFound();
             }
-
-            // Carga las listas desplegables con los valores actuales seleccionados
             ViewData["PaisResidencia"] = new SelectList(_context.Pais, "IdPais", "IdPais", cliente.PaisResidencia);
             ViewData["TipoIdentidad"] = new SelectList(_context.TipoIdentidads, "IdTipoIdentidad", "IdTipoIdentidad", cliente.TipoIdentidad);
             return View(cliente);
         }
 
         // POST: Clientes/Edit/5
-        // Procesa la edición de un cliente
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("IdCliente,IdentificacionCliente,PrimerApellido,SegundoApellido,Nombre,CorreoElectronico,FechaNacimiento,TipoIdentidad,PaisResidencia")] Cliente cliente)
         {
             if (id != cliente.IdCliente)
             {
-                return NotFound(); // Si el ID no coincide, retorna error
+                return NotFound();
             }
 
             if (ModelState.IsValid)
             {
                 try
                 {
-                    _context.Update(cliente); // Actualiza el cliente en el contexto
-                    await _context.SaveChangesAsync(); // Guarda los cambios
+                    _context.Update(cliente);
+                    await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
                     if (!ClienteExists(cliente.IdCliente))
                     {
-                        return NotFound(); // Si el cliente ya no existe, retorna error
+                        return NotFound();
                     }
                     else
                     {
-                        throw; // Lanza la excepción si es otro tipo de error
+                        throw;
                     }
                 }
-                return RedirectToAction(nameof(Index)); // Redirige a la lista de clientes
+                return RedirectToAction(nameof(Index));
             }
-
-            // Si hay errores, vuelve a cargar las listas desplegables y muestra el formulario
             ViewData["PaisResidencia"] = new SelectList(_context.Pais, "IdPais", "IdPais", cliente.PaisResidencia);
             ViewData["TipoIdentidad"] = new SelectList(_context.TipoIdentidads, "IdTipoIdentidad", "IdTipoIdentidad", cliente.TipoIdentidad);
             return View(cliente);
         }
 
         // GET: Clientes/Delete/5
-        // Muestra la vista de confirmación para eliminar un cliente
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -160,11 +188,10 @@ namespace Aplicacion_Web_Hospedaje.Controllers
                 return NotFound();
             }
 
-            return View(cliente); // Muestra la vista de confirmación
+            return View(cliente);
         }
 
         // POST: Clientes/Delete/5
-        // Elimina el cliente de la base de datos
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
@@ -172,14 +199,13 @@ namespace Aplicacion_Web_Hospedaje.Controllers
             var cliente = await _context.Clientes.FindAsync(id);
             if (cliente != null)
             {
-                _context.Clientes.Remove(cliente); // Elimina el cliente del contexto
+                _context.Clientes.Remove(cliente);
             }
 
-            await _context.SaveChangesAsync(); // Guarda los cambios
-            return RedirectToAction(nameof(Index)); // Redirige a la lista de clientes
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
         }
 
-        // Método auxiliar para verificar si un cliente existe en la base de datos
         private bool ClienteExists(int id)
         {
             return _context.Clientes.Any(e => e.IdCliente == id);

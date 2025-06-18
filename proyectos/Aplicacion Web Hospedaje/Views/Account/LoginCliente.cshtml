@@ -1,21 +1,16 @@
 ﻿@model Aplicacion_Web_Hospedaje.Models.LoginViewModel
 
 @{
-    ViewData["Title"] = "Iniciar Sesión";
+    ViewData["Title"] = "Iniciar Sesión Cliente";
 }
 
-<h2>Iniciar Sesión</h2>
+<h2>Ingreso Cliente</h2>
 
-<form asp-action="Login" method="post">
+<form asp-action="LoginCliente" method="post">
     <div class="form-group">
         <label asp-for="CorreoElectronico"></label>
         <input asp-for="CorreoElectronico" class="form-control" />
         <span asp-validation-for="CorreoElectronico" class="text-danger"></span>
     </div>
-    <div class="form-group">
-        <label asp-for="Contrasena"></label>
-        <input asp-for="Contrasena" class="form-control" type="password" />
-        <span asp-validation-for="Contrasena" class="text-danger"></span>
-    </div>
-    <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+    <button type="submit" class="btn btn-success mt-2">Entrar</button>
 </form>

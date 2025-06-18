@@ -9,10 +9,9 @@ using Aplicacion_Web_Hospedaje.Models;
 
 namespace Aplicacion_Web_Hospedaje.Controllers
 {
-    // Controlador para gestionar las operaciones CRUD de las empresas recreativas
     public class EmpresaRecreativasController : Controller
     {
-        // Campo privado para acceder al contexto de la base de datos
+
         private readonly AppDbContext _context;
 
         // Constructor que recibe el contexto de base de datos mediante inyección de dependencias

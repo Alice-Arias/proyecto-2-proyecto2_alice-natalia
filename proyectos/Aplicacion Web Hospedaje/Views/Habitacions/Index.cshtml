@@ -41,20 +41,24 @@ else
             </tr>
         </thead>
         <tbody>
-        @foreach (var item in Model)
-        {
-            <tr>
-                <td>@item.NumeroHabitacion</td>
-                <td>@item.CantidadPersonas</td>
-                <td>@item.IdHospedajeNavigation?.NombreHospedaje</td>
-                <td>@item.IdTipoHabitacionNavigation?.NombreTipoHabitacion</td>
-                <td>
-                    <a asp-action="Edit" asp-route-id="@item.IdHabitacion" class="btn btn-sm btn-warning">Editar</a>
-                    <a asp-action="Details" asp-route-id="@item.IdHabitacion" class="btn btn-sm btn-info">Detalles</a>
-                    <a asp-action="Delete" asp-route-id="@item.IdHabitacion" class="btn btn-sm btn-danger">Eliminar</a>
-                </td>
-            </tr>
-        }
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.NumeroHabitacion</td>
+                    <td>@item.CantidadPersonas</td>
+                    <td>@item.IdHospedajeNavigation?.NombreHospedaje</td>
+                    <td>@item.IdTipoHabitacionNavigation?.NombreTipoHabitacion</td>
+                    <td>
+                        <a asp-controller="Habitacions" asp-action="Edit" asp-route-id="@item.IdHabitacion"
+                            class="btn btn-sm btn-warning">Editar</a>
+                        <a asp-controller="Habitacions" asp-action="Details" asp-route-id="@item.IdHabitacion"
+                            class="btn btn-sm btn-info">Detalles</a>
+                        <a asp-controller="Habitacions" asp-action="Delete" asp-route-id="@item.IdHabitacion"
+                            class="btn btn-sm btn-danger">Eliminar</a>
+
+                    </td>
+                </tr>
+            }
         </tbody>
     </table>
 }

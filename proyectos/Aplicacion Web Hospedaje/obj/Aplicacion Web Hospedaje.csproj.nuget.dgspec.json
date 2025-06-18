@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\natal\\Downloads\\proyecto-1-proyecto1_alice-natalia-main\\proyecto-1-proyecto1_alice-natalia-main\\Aplicacion Web Hospedaje\\Aplicacion Web Hospedaje.csproj": {}
+    "C:\\Users\\arias\\OneDrive\\Desktop\\proyecto-2-proyecto2_alice-natalia\\proyectos\\Aplicacion Web Hospedaje\\Aplicacion Web Hospedaje.csproj": {}
   },
   "projects": {
-    "C:\\Users\\natal\\Downloads\\proyecto-1-proyecto1_alice-natalia-main\\proyecto-1-proyecto1_alice-natalia-main\\Aplicacion Web Hospedaje\\Aplicacion Web Hospedaje.csproj": {
+    "C:\\Users\\arias\\OneDrive\\Desktop\\proyecto-2-proyecto2_alice-natalia\\proyectos\\Aplicacion Web Hospedaje\\Aplicacion Web Hospedaje.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\natal\\Downloads\\proyecto-1-proyecto1_alice-natalia-main\\proyecto-1-proyecto1_alice-natalia-main\\Aplicacion Web Hospedaje\\Aplicacion Web Hospedaje.csproj",
+        "projectUniqueName": "C:\\Users\\arias\\OneDrive\\Desktop\\proyecto-2-proyecto2_alice-natalia\\proyectos\\Aplicacion Web Hospedaje\\Aplicacion Web Hospedaje.csproj",
         "projectName": "Aplicacion Web Hospedaje",
-        "projectPath": "C:\\Users\\natal\\Downloads\\proyecto-1-proyecto1_alice-natalia-main\\proyecto-1-proyecto1_alice-natalia-main\\Aplicacion Web Hospedaje\\Aplicacion Web Hospedaje.csproj",
-        "packagesPath": "C:\\Users\\natal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\natal\\Downloads\\proyecto-1-proyecto1_alice-natalia-main\\proyecto-1-proyecto1_alice-natalia-main\\Aplicacion Web Hospedaje\\obj\\",
+        "projectPath": "C:\\Users\\arias\\OneDrive\\Desktop\\proyecto-2-proyecto2_alice-natalia\\proyectos\\Aplicacion Web Hospedaje\\Aplicacion Web Hospedaje.csproj",
+        "packagesPath": "C:\\Users\\arias\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\arias\\OneDrive\\Desktop\\proyecto-2-proyecto2_alice-natalia\\proyectos\\Aplicacion Web Hospedaje\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\natal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\arias\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -84,7 +84,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
