@@ -1,18 +1,15 @@
-﻿<!-- Contenedor principal centrado con margen superior -->
-<div class="text-center mt-5">
+﻿<div class="text-center mt-5">
 
-    <!-- Título principal con estilo llamativo -->
     <h1 class="bienvenidos-titulo">Bienvenidos</h1>
 
-    <!-- Subtítulo con mensaje cálido -->
+
     <p class="bienvenidos-subtitulo">
         Donde el Caribe se siente como casa, siempre tratando de hacer a nuestros clientes felices.
     </p>
 
-    <!-- Contenedor con fondo decorativo e imágenes -->
     <div class="container fondo-con-imagen">
         <div class="row justify-content-center">
-            <!-- Imagen 1 del hotel -->
+
             <div class="col-md-4 mb-3 position-relative">
                 <a href="/Account/SeleccionarTipo" class="text-decoration-none">
                     <img src="~/images/hotel.jpeg" alt="Empresa Recreativa" class="img-fluid rounded shadow" />
@@ -21,113 +18,83 @@
                     </div>
                 </a>
             </div>
-            <!-- Imagen 2 del hotel -->
+
             <div class="col-md-4 mb-3">
                 <img src="~/images/hotel1.jpeg" alt="Hotel 2" class="img-fluid rounded shadow" />
             </div>
-            <!-- Imagen 3 del hotel -->
+
             <div class="col-md-4 mb-3">
                 <img src="~/images/hotel2.jpeg" alt="Hotel 3" class="img-fluid rounded shadow" />
             </div>
         </div>
     </div>
-
-    <!-- Botón grande con estilo principal y margen superior -->
+    >
     <a href="/Hospedajes" class="btn btn-primary btn-lg mt-3">Empezar</a>
 
 </div>
 
 <style>
-    /* Contenedor con fondo personalizado */
     .fondo-con-imagen {
         position: relative;
-        /* Permite posicionar el fondo con ::before */
         padding: 3rem 2rem;
-        /* Espaciado interno */
         border-radius: 15px;
-        /* Bordes redondeados */
         background-color: #fef6e4;
-        /* Color de fondo beige claro */
         overflow: hidden;
-        /* Oculta desbordes del pseudo-elemento */
     }
 
-    /* Imagen de fondo decorativa con opacidad */
+
     .fondo-con-imagen::before {
         content: "";
-        /* Requerido para pseudo-elementos */
         position: absolute;
-        /* Cubre todo el contenedor */
         top: 0;
         left: 0;
         right: 0;
         bottom: 0;
         background-image: url('/images/fondo1.png');
-        /* Imagen de fondo */
         background-size: contain;
-        /* Escala la imagen completa */
         background-position: center center;
-        /* Centrada horizontal y verticalmente */
         background-repeat: no-repeat;
-        /* No se repite */
         opacity: 0.3;
-        /* Transparencia para que no opaque el contenido */
         z-index: 0;
-        /* Detrás del contenido */
     }
 
-    /* Asegura que todo el contenido esté sobre el fondo */
     .fondo-con-imagen>* {
         position: relative;
         z-index: 1;
     }
 
-    /* Estilos para el título principal */
+ 
     .bienvenidos-titulo {
         font-family: 'Poppins', sans-serif;
-        /* Fuente moderna */
         font-size: 2.5rem;
-        /* Tamaño grande */
         font-weight: 900;
-        /* Súper negrita */
         color: #f77f00;
-        /* Naranja vibrante */
         -webkit-text-stroke: 1px black;
-        /* Contorno negro (solo en WebKit) */
         text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
-        /* Sombra para profundidad */
         margin-bottom: 0.5rem;
-        /* Espacio debajo del título */
         letter-spacing: 2px;
-        /* Espaciado entre letras */
     }
 
-    /* Estilos para el subtítulo */
     .bienvenidos-subtitulo {
         font-family: 'Poppins', sans-serif;
-        /* Fuente coherente con el título */
         font-size: 1rem;
-        /* Tamaño legible */
         color: #4a3f2a;
-        /* Marrón suave */
         margin-bottom: 2rem;
-        /* Espacio debajo del subtítulo */
         font-weight: 700;
-        /* Negrita */
     }
-    .ingresar-overlay {
-    position: absolute;
-    bottom: 10px;
-    left: 0;
-    right: 0;
-    background: rgba(255, 165, 0, 0.85); /* fondo naranja semitransparente */
-    color: white;
-    font-weight: bold;
-    text-align: center;
-    padding: 0.5rem;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    font-size: 1.1rem;
-}
 
+    .ingresar-overlay {
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        right: 0;
+        background: rgba(255, 165, 0, 0.85);
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        padding: 0.5rem;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        font-size: 1.1rem;
+    }
 </style>

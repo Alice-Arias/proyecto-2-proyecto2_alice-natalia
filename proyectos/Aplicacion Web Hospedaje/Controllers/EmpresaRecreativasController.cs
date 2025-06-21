@@ -103,8 +103,8 @@ namespace Aplicacion_Web_Hospedaje.Controllers
             {
                 try
                 {
-                    _context.Update(empresaRecreativa); // Actualiza la empresa en el contexto
-                    await _context.SaveChangesAsync(); // Guarda los cambios
+                    _context.Update(empresaRecreativa);
+                    await _context.SaveChangesAsync(); 
                 }
                 catch (DbUpdateConcurrencyException)
                 {
